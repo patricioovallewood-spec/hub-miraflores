@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" data-i18n="meta_desc" content="Hub Miraflores — El campus de innovación del Perú. Del idea al escalamiento, conectamos startups con un ecosistema de alto impacto en el corazón de Miraflores." />
+<meta name="theme-color" content="#0F1A16" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hub Miraflores — El campus de innovación del Perú" />
+<meta property="og:description" content="Donde nació la primera cabina de Internet del Perú, hoy nace el campus de startups de Miraflores." />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>Hub Miraflores — El campus de innovación del Perú</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Hub Miraflores","description":"Campus de innovación y startups del distrito de Miraflores, en el Centro Cultural Ricardo Palma, donde operó la primera cabina pública de Internet del Perú (1994).","location":{"@type":"Place","name":"Centro Cultural Ricardo Palma","address":{"@type":"PostalAddress","addressLocality":"Miraflores","addressRegion":"Lima","addressCountry":"PE"}},"inLanguage":["es","en"]}
+</script>
+<style>
+:root{
+  --verde-900:#00432C;--verde-700:#006644;--verde:#00875A;--verde-400:#2FB185;
+  --arena:#F3EEE4;--coral:#F26A4B;--dorado:#E8B04B;--mar:#0E7C9B;--morado:#6A4C93;
+  --blanco:#FFFFFF;--tinta:#0F1A16;--tinta-2:#41504A;--gris:#8A968F;--crema:#FAF8F3;--linea:#E4E0D6;
+  --negro:#0A120F;
+  --font-display:'Fraunces',Georgia,serif;--font-body:'Manrope',system-ui,sans-serif;
+  --fs-300:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);--fs-400:clamp(0.95rem,0.9rem + 0.2vw,1.0625rem);
+  --fs-500:clamp(1.125rem,1.05rem + 0.4vw,1.375rem);--fs-600:clamp(1.5rem,1.3rem + 0.9vw,2.125rem);
+  --fs-700:clamp(2rem,1.6rem + 1.8vw,3rem);--fs-800:clamp(2.75rem,2rem + 3.5vw,4.5rem);--fs-900:clamp(3.5rem,2.4rem + 6vw,7rem);
+  --sp-1:0.5rem;--sp-2:1rem;--sp-3:1.5rem;--sp-4:2rem;--sp-5:3rem;--sp-6:4rem;--sp-7:6rem;--sp-8:8rem;
+  --container:1300px;--radius-sm:6px;--radius-md:14px;--radius-lg:26px;
+  --shadow-sm:0 2px 10px rgba(15,26,22,.06);--shadow-md:0 16px 40px rgba(15,26,22,.14);
+  --ease:cubic-bezier(.22,.8,.28,1);--dur:280ms;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:var(--font-body);font-size:var(--fs-400);line-height:1.6;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+img,svg{max-width:100%;display:block;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+a{color:var(--verde);text-decoration:none;transition:color var(--dur) var(--ease);}
+a:hover{color:var(--verde-900);}
+:focus-visible{outline:3px solid var(--dorado);outline-offset:3px;border-radius:var(--radius-sm);}
+.skip-link{position:absolute;top:-100px;left:var(--sp-2);background:var(--tinta);color:var(--blanco);padding:var(--sp-1) var(--sp-2);border-radius:var(--radius-sm);z-index:1000;transition:top var(--dur) var(--ease);}
+.skip-link:focus{top:var(--sp-2);color:var(--blanco);}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--sp-3);}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;letter-spacing:-0.02em;color:var(--tinta);margin:0 0 var(--sp-3);}
+h1{font-size:var(--fs-900);}h2{font-size:var(--fs-800);}h3{font-size:var(--fs-600);}
+h4{font-family:var(--font-body);font-weight:700;font-size:var(--fs-500);margin:0 0 var(--sp-2);line-height:1.2;}
+p{margin:0 0 var(--sp-2);color:var(--tinta-2);max-width:64ch;}
+.eyebrow{display:inline-flex;align-items:center;gap:var(--sp-1);font-size:var(--fs-300);font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--verde);margin-bottom:var(--sp-3);}
+.eyebrow::before{content:'';width:26px;height:2px;background:var(--verde);}
+.iso{width:38px;height:38px;flex-shrink:0;}
+.beta-badge{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--dorado);color:var(--tinta);padding:3px 8px;border-radius:5px;vertical-align:middle;margin-left:8px;}
+
+.site-header{position:sticky;top:0;z-index:100;background:rgba(10,18,15,.85);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid rgba(255,255,255,.1);}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);padding:var(--sp-2) 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;color:#fff;font-size:1.3rem;letter-spacing:-0.02em;}
+.brand .mf{color:var(--dorado);}
+.nav-list{display:flex;gap:var(--sp-1);list-style:none;margin:0;padding:0;}
+.nav-list a{color:rgba(255,255,255,.82);font-weight:600;font-size:var(--fs-400);padding:8px 13px;border-radius:var(--radius-sm);transition:all var(--dur) var(--ease);}
+.nav-list a:hover{color:#fff;background:rgba(255,255,255,.1);}
+.nav-actions{display:flex;align-items:center;gap:var(--sp-2);}
+.lang-toggle{display:inline-flex;align-items:center;background:rgba(255,255,255,.1);border-radius:999px;padding:3px;font-weight:700;font-size:var(--fs-300);}
+.lang-toggle button{padding:6px 12px;border-radius:999px;color:rgba(255,255,255,.7);transition:all var(--dur) var(--ease);}
+.lang-toggle button.active{background:var(--dorado);color:var(--tinta);}
+.nav-cta{background:var(--coral);color:#fff;padding:10px 22px;border-radius:999px;font-weight:700;font-size:var(--fs-300);white-space:nowrap;transition:all var(--dur) var(--ease);}
+.nav-cta:hover{background:#fff;color:var(--tinta);transform:translateY(-1px);}
+.menu-toggle{display:none;width:44px;height:44px;border-radius:var(--radius-sm);align-items:center;justify-content:center;}
+.menu-toggle span{width:22px;height:2px;background:#fff;position:relative;}
+.menu-toggle span::before,.menu-toggle span::after{content:'';position:absolute;left:0;width:22px;height:2px;background:#fff;}
+.menu-toggle span::before{top:-7px;}.menu-toggle span::after{top:7px;}
+@media (max-width:980px){.menu-toggle{display:inline-flex;}.nav-list{display:none;}.nav-list.is-open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--negro);padding:var(--sp-3);border-bottom:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow-md);gap:var(--sp-1);}.nav-cta{display:none;}}
+
+/* HERO oscuro con imagen de campus simulada */
+.hero{position:relative;overflow:hidden;color:#fff;padding:var(--sp-8) 0;isolation:isolate;min-height:78vh;display:flex;align-items:center;}
+.hero::before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(135deg,var(--negro) 0%,var(--verde-900) 70%,var(--verde-700) 130%);}
+.hero::after{content:'';position:absolute;inset:0;z-index:-1;opacity:.5;background-image:radial-gradient(circle at 78% 30%,rgba(232,176,75,.28),transparent 45%),linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:100% 100%,54px 54px,54px 54px;}
+.hero h1{color:#fff;max-width:15ch;font-size:var(--fs-900);margin-bottom:var(--sp-3);}
+.hero h1 .accent{color:var(--dorado);}
+.hero .eyebrow{color:var(--dorado);}.hero .eyebrow::before{background:var(--dorado);}
+.hero p.lead{color:rgba(255,255,255,.85);font-size:var(--fs-500);max-width:54ch;margin-bottom:var(--sp-4);}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-6);}
+.btn{display:inline-flex;align-items:center;gap:var(--sp-1);padding:15px 32px;border-radius:999px;font-weight:700;font-size:var(--fs-400);transition:all var(--dur) var(--ease);cursor:pointer;border:2px solid transparent;}
+.btn-primary{background:var(--coral);color:#fff;}
+.btn-primary:hover{background:#fff;color:var(--tinta);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4);}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff;}
+.btn-dark{background:var(--verde);color:#fff;}
+.btn-dark:hover{background:var(--verde-900);color:#fff;transform:translateY(-2px);}
+.hero-stats{display:flex;gap:var(--sp-6);flex-wrap:wrap;}
+.hero-stat .n{font-family:var(--font-display);font-weight:700;font-size:var(--fs-700);color:#fff;line-height:1;display:block;}
+.hero-stat .n em{color:var(--dorado);font-style:normal;}
+.hero-stat p{color:rgba(255,255,255,.7);font-size:var(--fs-300);margin:6px 0 0;}
+
+section{padding:var(--sp-7) 0;}
+.section-head{max-width:780px;margin-bottom:var(--sp-4);}
+.bg-crema{background:var(--crema);}
+.bg-negro{background:var(--negro);color:#fff;}
+.bg-negro h2,.bg-negro h3{color:#fff;}.bg-negro p{color:rgba(255,255,255,.75);}
+.bg-negro .eyebrow{color:var(--dorado);}.bg-negro .eyebrow::before{background:var(--dorado);}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:var(--sp-4);}
+
+/* Historia / cabina */
+.historia{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--sp-5);align-items:center;}
+.historia-visual{aspect-ratio:4/3;border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--verde-900),var(--mar));position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.historia-visual::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:30px 30px;}
+.historia-visual .yr{position:relative;font-family:var(--font-display);font-weight:700;font-size:clamp(3rem,10vw,6rem);color:#fff;letter-spacing:-0.03em;}
+.historia-visual .yr span{color:var(--dorado);}
+@media (max-width:860px){.historia{grid-template-columns:1fr;gap:var(--sp-3);}}
+
+/* Startups grid */
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--sp-2);margin-top:var(--sp-4);}
+.logo-card{aspect-ratio:3/2;border:1px solid var(--linea);border-radius:var(--radius-md);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:var(--blanco);transition:all var(--dur) var(--ease);padding:var(--sp-2);text-align:center;}
+.logo-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--verde);}
+.logo-card .nm{font-family:var(--font-display);font-weight:700;font-size:var(--fs-400);color:var(--tinta);}
+.logo-card .tag{font-size:0.7rem;color:var(--gris);text-transform:uppercase;letter-spacing:.05em;}
+
+/* Programas */
+.progs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.prog{border-radius:var(--radius-lg);padding:var(--sp-4);color:#fff;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:transform var(--dur) var(--ease);position:relative;overflow:hidden;}
+.prog:hover{transform:translateY(-6px);}
+.prog .k{font-size:var(--fs-300);text-transform:uppercase;letter-spacing:.1em;opacity:.85;}
+.prog h3{color:#fff;font-size:var(--fs-500);margin:var(--sp-2) 0;}
+.prog p{color:rgba(255,255,255,.85);font-size:var(--fs-300);margin:0;}
+.prog.p1{background:linear-gradient(160deg,var(--verde-700),var(--verde));}
+.prog.p2{background:linear-gradient(160deg,#8f2f1f,var(--coral));}
+.prog.p3{background:linear-gradient(160deg,#083f52,var(--mar));}
+.prog.p4{background:linear-gradient(160deg,#2f2247,var(--morado));}
+.prog.p5{background:linear-gradient(160deg,var(--verde-900),var(--verde-700));}
+.prog.p6{background:linear-gradient(160deg,#9a7415,var(--dorado));color:var(--tinta);}
+.prog.p6 h3,.prog.p6 p{color:var(--tinta);}.prog.p6 p{opacity:.8;}
+
+/* Beneficios */
+.benes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.bene{padding:var(--sp-4);border:1px solid var(--linea);border-radius:var(--radius-md);background:var(--blanco);transition:all var(--dur) var(--ease);}
+.bene:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--verde);}
+.bene .ic{width:52px;height:52px;border-radius:var(--radius-sm);background:var(--verde-900);color:var(--dorado);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:var(--fs-500);margin-bottom:var(--sp-3);}
+.bene h4{margin-bottom:var(--sp-1);}.bene p{margin:0;font-size:var(--fs-400);}
+
+/* Partners */
+.partners{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:var(--sp-2);margin-top:var(--sp-4);}
+.partner{aspect-ratio:2/1;border:1px solid var(--linea);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--blanco);font-family:var(--font-display);font-weight:700;color:var(--tinta-2);font-size:var(--fs-400);text-align:center;padding:var(--sp-1);transition:all var(--dur) var(--ease);}
+.partner:hover{border-color:var(--verde);color:var(--verde-900);transform:translateY(-2px);}
+
+/* Noticias */
+.stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.story{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;transition:all var(--dur) var(--ease);}
+.story:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.story-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--verde),var(--mar));}
+.story:nth-child(3n+2) .story-img{background:linear-gradient(135deg,var(--coral),var(--dorado));}
+.story:nth-child(3n+3) .story-img{background:linear-gradient(135deg,var(--morado),var(--verde-700));}
+.story-body{padding:var(--sp-3);flex:1;}
+.story-body .date{font-weight:700;font-size:var(--fs-300);color:var(--coral);text-transform:uppercase;letter-spacing:.05em;}
+.story-body h4{font-size:var(--fs-400);margin:var(--sp-1) 0 0;line-height:1.3;}
+
+.cta{padding:var(--sp-8) 0;background:var(--dorado);color:var(--tinta);text-align:center;}
+.cta h2{color:var(--tinta);max-width:20ch;margin-inline:auto;}
+.cta p{color:var(--tinta);opacity:.85;font-size:var(--fs-500);margin:0 auto var(--sp-4);max-width:50ch;}
+
+.site-footer{background:var(--negro);color:rgba(255,255,255,.72);padding:var(--sp-6) 0 var(--sp-3);font-size:var(--fs-300);}
+.footer-top{display:flex;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;margin-bottom:var(--sp-4);}
+.footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:var(--fs-600);color:#fff;}
+.footer-brand .mf{color:var(--dorado);}
+.footer-cols{display:grid;grid-template-columns:repeat(4,auto);gap:var(--sp-5);}
+.site-footer h5{color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:var(--fs-300);margin:0 0 var(--sp-2);font-weight:700;}
+.site-footer ul{list-style:none;padding:0;margin:0;}.site-footer li{margin-bottom:var(--sp-1);}
+.site-footer a{color:rgba(255,255,255,.72);}.site-footer a:hover{color:var(--dorado);}
+.footer-bottom{padding-top:var(--sp-3);border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-2);}
+@media (max-width:760px){.footer-cols{grid-template-columns:1fr 1fr;gap:var(--sp-3);}}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+.reveal.is-visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+.lead-narrow{max-width:680px;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="iso-mf" viewBox="0 0 100 100"><circle cx="50" cy="34" r="16" fill="var(--dorado)"/><path d="M6,64 Q28,48 50,64 T94,64" fill="none" stroke="var(--verde-400)" stroke-width="7" stroke-linecap="round"/><path d="M6,80 Q28,64 50,80 T94,80" fill="none" stroke="var(--mar)" stroke-width="7" stroke-linecap="round"/></symbol></svg>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="Hub Miraflores">
+      <svg class="iso" aria-hidden="true"><use href="#iso-mf"/></svg>
+      Hub <span class="mf">Miraflores</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#startups" data-i18n="nav_startups">Startups</a></li>
+        <li><a href="#programas" data-i18n="nav_programs">Programas</a></li>
+        <li><a href="#campus" data-i18n="nav_campus">El Campus</a></li>
+        <li><a href="#historia" data-i18n="nav_history">Historia</a></li>
+        <li><a href="#noticias" data-i18n="nav_news">Noticias</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma"><button data-lang-btn="es" class="active" aria-pressed="true">ES</button><button data-lang-btn="en" aria-pressed="false">EN</button></div>
+      <a class="nav-cta" href="#contacto" data-i18n="nav_cta">Postular</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-list"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container">
+    <span class="eyebrow" data-i18n="h_eyebrow">Centro Cultural Ricardo Palma · Miraflores</span>
+    <h1 data-i18n="h_title">El campus de innovación <span class="accent">del Perú</span>.</h1>
+    <p class="lead" data-i18n="h_lead">Donde en 1994 nació la primera cabina de Internet del país, hoy nace el mayor campus de startups de Miraflores. De la idea al escalamiento, conectamos a los emprendedores con un ecosistema de alto impacto.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#programas" data-i18n="h_cta1">Postula a un programa</a>
+      <a class="btn btn-ghost" href="#historia" data-i18n="h_cta2">Conoce nuestra historia</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">150<em>+</em></span><p data-i18n="h_s1">startups proyectadas</p></div>
+      <div class="hero-stat"><span class="n">8</span><p data-i18n="h_s2">programas de aceleración</p></div>
+      <div class="hero-stat"><span class="n">40</span><p data-i18n="h_s3">aliados del ecosistema</p></div>
+      <div class="hero-stat"><span class="n">1994</span><p data-i18n="h_s4">año que conectó al Perú</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STARTUPS -->
+<section id="startups">
+  <div class="container">
+    <div class="head-row reveal">
+      <div><span class="eyebrow" data-i18n="st_eyebrow">Hecho en el Hub</span><h2 data-i18n="st_title">Startups que nacen acá.</h2></div>
+      <a class="btn btn-dark" href="#contacto" data-i18n="st_cta">Ver todas</a>
+    </div>
+    <p class="reveal" style="color:var(--gris);font-size:var(--fs-300);" data-i18n="st_note">Startups de ejemplo para la maqueta. Se reemplazarán con las residentes reales del Hub.</p>
+    <div class="logos reveal">
+      <div class="logo-card"><span class="nm">AndesPay</span><span class="tag" data-i18n="st_1">Fintech</span></div>
+      <div class="logo-card"><span class="nm">RutaViva</span><span class="tag" data-i18n="st_2">Movilidad</span></div>
+      <div class="logo-card"><span class="nm">Sabor IA</span><span class="tag" data-i18n="st_3">Foodtech</span></div>
+      <div class="logo-card"><span class="nm">TuristIA</span><span class="tag" data-i18n="st_4">Turismo</span></div>
+      <div class="logo-card"><span class="nm">VerdeLab</span><span class="tag" data-i18n="st_5">Cleantech</span></div>
+      <div class="logo-card"><span class="nm">SaludCerca</span><span class="tag" data-i18n="st_6">Healthtech</span></div>
+      <div class="logo-card"><span class="nm">EduPerú</span><span class="tag" data-i18n="st_7">Edtech</span></div>
+      <div class="logo-card"><span class="nm">CasApp</span><span class="tag" data-i18n="st_8">Proptech</span></div>
+      <div class="logo-card"><span class="nm">GobiernoYa</span><span class="tag" data-i18n="st_9">GovTech</span></div>
+      <div class="logo-card"><span class="nm">OlaMar</span><span class="tag" data-i18n="st_10">Economía azul</span></div>
+      <div class="logo-card"><span class="nm">CreaLima</span><span class="tag" data-i18n="st_11">Economía creativa</span></div>
+      <div class="logo-card"><span class="nm">DataDistrito</span><span class="tag" data-i18n="st_12">Data / IA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS -->
+<section class="bg-crema" id="programas">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow" data-i18n="pr_eyebrow">Programas</span><h2 data-i18n="pr_title">Un programa para cada etapa.</h2><p data-i18n="pr_lead">Del primer prototipo al escalamiento regional, el Hub ofrece rutas de acompañamiento junto a aliados de primer nivel.</p></div>
+    <div class="progs">
+      <article class="prog p1 reveal"><div><span class="k" data-i18n="pr_1_k">Idea</span><h3 data-i18n="pr_1_t">Cabina</h3><p data-i18n="pr_1_d">Preincubación para quienes recién empiezan. En honor a la cabina de 1994, el primer punto de acceso.</p></div></article>
+      <article class="prog p2 reveal"><div><span class="k" data-i18n="pr_2_k">Tracción</span><h3 data-i18n="pr_2_t">Malecón</h3><p data-i18n="pr_2_d">Aceleración para startups con producto y primeros clientes.</p></div></article>
+      <article class="prog p3 reveal"><div><span class="k" data-i18n="pr_3_k">Escala</span><h3 data-i18n="pr_3_t">Pacífico</h3><p data-i18n="pr_3_d">Escalamiento regional para startups listas para cruzar fronteras.</p></div></article>
+      <article class="prog p4 reveal"><div><span class="k" data-i18n="pr_4_k">GovTech</span><h3 data-i18n="pr_4_t">Distrito</h3><p data-i18n="pr_4_d">Programa para soluciones que mejoran los servicios de la ciudad.</p></div></article>
+      <article class="prog p5 reveal"><div><span class="k" data-i18n="pr_5_k">Impacto</span><h3 data-i18n="pr_5_t">Vecino</h3><p data-i18n="pr_5_d">Emprendimiento social y ambiental con foco en la comunidad.</p></div></article>
+      <article class="prog p6 reveal"><div><span class="k" data-i18n="pr_6_k">Mujeres</span><h3 data-i18n="pr_6_t">Fundadoras</h3><p data-i18n="pr_6_d">Programa dedicado a startups lideradas por mujeres.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPUS / QUÉ OBTIENES -->
+<section id="campus">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow" data-i18n="cm_eyebrow">El Campus</span><h2 data-i18n="cm_title">No es un coworking cualquiera.</h2></div>
+    <div class="benes">
+      <article class="bene reveal"><div class="ic">◆</div><h4 data-i18n="cm_1t">Contactos que abren puertas</h4><p data-i18n="cm_1d">Una de las comunidades más conectadas del Perú: fondos, corporativos, autoridades y founders, en un solo lugar.</p></article>
+      <article class="bene reveal"><div class="ic">◆</div><h4 data-i18n="cm_2t">Rodeado de los mejores</h4><p data-i18n="cm_2d">Construye tu startup junto a decenas de equipos de frontera y emprendedores con experiencia.</p></article>
+      <article class="bene reveal"><div class="ic">◆</div><h4 data-i18n="cm_3t">Un espacio con historia</h4><p data-i18n="cm_3d">El Centro Cultural Ricardo Palma, cuna de la primera cabina de Internet del país, hoy reconvertido en campus de innovación.</p></article>
+      <article class="bene reveal"><div class="ic">◆</div><h4 data-i18n="cm_4t">Servicios que no encuentras en otro lado</h4><p data-i18n="cm_4d">Mentoría, acceso a inversión, apoyo legal y administrativo, y alianzas con marcas globales.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section class="bg-negro" id="historia">
+  <div class="container">
+    <div class="historia">
+      <div class="reveal"><span class="eyebrow" data-i18n="hi_eyebrow">1994 · El origen</span><h2 data-i18n="hi_title">Donde el Perú se conectó al mundo.</h2><p data-i18n="hi_p1">En febrero de 1994, la Red Científica Peruana conectó al Perú a Internet por primera vez, vía satélite. Ese mismo año, en el Centro Cultural Ricardo Palma de Miraflores, se inauguró la primera cabina pública de Internet del país.</p><p data-i18n="hi_p2">Tenía 40 computadoras —20 PC y 20 Macintosh— donde cualquier ciudadano podía explorar la red y aprender a usarla. El modelo fue tan pionero que se replicó por todo el Perú en los años siguientes.</p><p data-i18n="hi_p3"><strong style="color:#fff;">Treinta años después, el mismo edificio vuelve a ser punto de partida: de la cabina que conectó al país, al campus que lo hará emprender.</strong></p></div>
+      <div class="historia-visual reveal" aria-hidden="true"><div class="yr">19<span>94</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow" data-i18n="pt_eyebrow">Ecosistema</span><h2 data-i18n="pt_title">Aliados presentes en el campus.</h2><p data-i18n="pt_lead">Tipos de aliados que el Hub busca articular. Logos de ejemplo para la maqueta.</p></div>
+    <div class="partners reveal">
+      <div class="partner" data-i18n="pt_1">Municipalidad</div>
+      <div class="partner" data-i18n="pt_2">Universidades</div>
+      <div class="partner" data-i18n="pt_3">Fondos VC</div>
+      <div class="partner" data-i18n="pt_4">Banca</div>
+      <div class="partner" data-i18n="pt_5">Corporativos</div>
+      <div class="partner" data-i18n="pt_6">Cooperación</div>
+      <div class="partner" data-i18n="pt_7">Cámaras</div>
+      <div class="partner" data-i18n="pt_8">Aceleradoras</div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section class="bg-crema" id="noticias">
+  <div class="container">
+    <div class="head-row reveal"><div><span class="eyebrow" data-i18n="no_eyebrow">Noticias</span><h2 data-i18n="no_title">Qué pasa en el Hub.</h2></div></div>
+    <div class="stories reveal">
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon">Próximamente</span><h4 data-i18n="no_1">Miraflores reconvierte el Ricardo Palma en su campus de innovación</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon2">Próximamente</span><h4 data-i18n="no_2">Abre la convocatoria del programa Cabina para nuevas startups</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon3">Próximamente</span><h4 data-i18n="no_3">30 años de la primera cabina de Internet del Perú</h4></div></article>
+    </div>
+    <p style="margin-top:1.5rem;color:var(--gris);font-size:var(--fs-300);" data-i18n="no_note">Contenido ilustrativo para la maqueta. Se reemplazará con noticias reales.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <div class="container reveal">
+    <h2 data-i18n="c_title">Tu startup empieza en Miraflores.</h2>
+    <p data-i18n="c_p">Postula a uno de nuestros programas o escríbenos para ser parte del ecosistema.</p>
+    <a class="btn btn-primary" href="mailto:hub@miraflores.gob.pe?subject=Quiero%20postular%20al%20Hub%20Miraflores" style="background:var(--tinta);color:#fff;" data-i18n="c_btn">Postular al Hub →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand"><svg class="iso" style="width:34px;height:34px;" aria-hidden="true"><use href="#iso-mf"/></svg> Hub <span class="mf">Miraflores</span></div>
+        <p style="color:rgba(255,255,255,.6);max-width:36ch;margin-top:1rem;" data-i18n="ft_tag">El campus de innovación del Perú. Donde el país se conectó, hoy emprende.</p>
+        <p style="color:rgba(255,255,255,.5);font-size:var(--fs-300);margin-top:.5rem;">Centro Cultural Ricardo Palma · Av. Larco 770, Miraflores, Lima</p>
+      </div>
+      <div class="footer-cols">
+        <div><h5 data-i18n="ft_h1">Explora</h5><ul><li><a href="#startups" data-i18n="nav_startups">Startups</a></li><li><a href="#programas" data-i18n="nav_programs">Programas</a></li><li><a href="#campus" data-i18n="nav_campus">El Campus</a></li></ul></div>
+        <div><h5 data-i18n="ft_h2">Hub</h5><ul><li><a href="#historia" data-i18n="nav_history">Historia</a></li><li><a href="#noticias" data-i18n="nav_news">Noticias</a></li><li><a href="#contacto" data-i18n="ft_join">Postular</a></li></ul></div>
+        <div><h5 data-i18n="ft_h3">Contacto</h5><ul><li><a href="mailto:hub@miraflores.gob.pe">hub@miraflores.gob.pe</a></li><li data-i18n="ft_loc">Miraflores, Lima, Perú</li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="ft_copy">© 2026 Hub Miraflores. Maqueta / versión beta.</span><span data-i18n="ft_insp">Inspirado en campus de innovación de referencia mundial.</span></div>
+  </div>
+</footer>
+
+<script>
+const I18N={
+ es:{
+  skip:"Saltar al contenido",
+  nav_startups:"Startups",nav_programs:"Programas",nav_campus:"El Campus",nav_history:"Historia",nav_news:"Noticias",nav_cta:"Postular",
+  h_eyebrow:"Centro Cultural Ricardo Palma · Miraflores",h_title:'El campus de innovación <span class="accent">del Perú</span>.',h_lead:"Donde en 1994 nació la primera cabina de Internet del país, hoy nace el mayor campus de startups de Miraflores. De la idea al escalamiento, conectamos a los emprendedores con un ecosistema de alto impacto.",h_cta1:"Postula a un programa",h_cta2:"Conoce nuestra historia",
+  h_s1:"startups proyectadas",h_s2:"programas de aceleración",h_s3:"aliados del ecosistema",h_s4:"año que conectó al Perú",
+  st_eyebrow:"Hecho en el Hub",st_title:"Startups que nacen acá.",st_cta:"Ver todas",st_note:"Startups de ejemplo para la maqueta. Se reemplazarán con las residentes reales del Hub.",
+  st_1:"Fintech",st_2:"Movilidad",st_3:"Foodtech",st_4:"Turismo",st_5:"Cleantech",st_6:"Healthtech",st_7:"Edtech",st_8:"Proptech",st_9:"GovTech",st_10:"Economía azul",st_11:"Economía creativa",st_12:"Data / IA",
+  pr_eyebrow:"Programas",pr_title:"Un programa para cada etapa.",pr_lead:"Del primer prototipo al escalamiento regional, el Hub ofrece rutas de acompañamiento junto a aliados de primer nivel.",
+  pr_1_k:"Idea",pr_1_t:"Cabina",pr_1_d:"Preincubación para quienes recién empiezan. En honor a la cabina de 1994, el primer punto de acceso.",
+  pr_2_k:"Tracción",pr_2_t:"Malecón",pr_2_d:"Aceleración para startups con producto y primeros clientes.",
+  pr_3_k:"Escala",pr_3_t:"Pacífico",pr_3_d:"Escalamiento regional para startups listas para cruzar fronteras.",
+  pr_4_k:"GovTech",pr_4_t:"Distrito",pr_4_d:"Programa para soluciones que mejoran los servicios de la ciudad.",
+  pr_5_k:"Impacto",pr_5_t:"Vecino",pr_5_d:"Emprendimiento social y ambiental con foco en la comunidad.",
+  pr_6_k:"Mujeres",pr_6_t:"Fundadoras",pr_6_d:"Programa dedicado a startups lideradas por mujeres.",
+  cm_eyebrow:"El Campus",cm_title:"No es un coworking cualquiera.",
+  cm_1t:"Contactos que abren puertas",cm_1d:"Una de las comunidades más conectadas del Perú: fondos, corporativos, autoridades y founders, en un solo lugar.",
+  cm_2t:"Rodeado de los mejores",cm_2d:"Construye tu startup junto a decenas de equipos de frontera y emprendedores con experiencia.",
+  cm_3t:"Un espacio con historia",cm_3d:"El Centro Cultural Ricardo Palma, cuna de la primera cabina de Internet del país, hoy reconvertido en campus de innovación.",
+  cm_4t:"Servicios que no encuentras en otro lado",cm_4d:"Mentoría, acceso a inversión, apoyo legal y administrativo, y alianzas con marcas globales.",
+  hi_eyebrow:"1994 · El origen",hi_title:"Donde el Perú se conectó al mundo.",hi_p1:"En febrero de 1994, la Red Científica Peruana conectó al Perú a Internet por primera vez, vía satélite. Ese mismo año, en el Centro Cultural Ricardo Palma de Miraflores, se inauguró la primera cabina pública de Internet del país.",hi_p2:"Tenía 40 computadoras —20 PC y 20 Macintosh— donde cualquier ciudadano podía explorar la red y aprender a usarla. El modelo fue tan pionero que se replicó por todo el Perú en los años siguientes.",hi_p3:"<strong style=\"color:#fff;\">Treinta años después, el mismo edificio vuelve a ser punto de partida: de la cabina que conectó al país, al campus que lo hará emprender.</strong>",
+  pt_eyebrow:"Ecosistema",pt_title:"Aliados presentes en el campus.",pt_lead:"Tipos de aliados que el Hub busca articular. Logos de ejemplo para la maqueta.",
+  pt_1:"Municipalidad",pt_2:"Universidades",pt_3:"Fondos VC",pt_4:"Banca",pt_5:"Corporativos",pt_6:"Cooperación",pt_7:"Cámaras",pt_8:"Aceleradoras",
+  no_eyebrow:"Noticias",no_title:"Qué pasa en el Hub.",no_soon:"Próximamente",no_soon2:"Próximamente",no_soon3:"Próximamente",no_1:"Miraflores reconvierte el Ricardo Palma en su campus de innovación",no_2:"Abre la convocatoria del programa Cabina para nuevas startups",no_3:"30 años de la primera cabina de Internet del Perú",no_note:"Contenido ilustrativo para la maqueta. Se reemplazará con noticias reales.",
+  c_title:"Tu startup empieza en Miraflores.",c_p:"Postula a uno de nuestros programas o escríbenos para ser parte del ecosistema.",c_btn:"Postular al Hub →",
+  ft_tag:"El campus de innovación del Perú. Donde el país se conectó, hoy emprende.",ft_h1:"Explora",ft_h2:"Hub",ft_h3:"Contacto",ft_join:"Postular",ft_loc:"Miraflores, Lima, Perú",ft_copy:"© 2026 Hub Miraflores. Maqueta / versión beta.",ft_insp:"Inspirado en campus de innovación de referencia mundial."
+ },
+ en:{
+  skip:"Skip to content",
+  nav_startups:"Startups",nav_programs:"Programs",nav_campus:"The Campus",nav_history:"History",nav_news:"News",nav_cta:"Apply",
+  h_eyebrow:"Ricardo Palma Cultural Center · Miraflores",h_title:'The startup campus <span class="accent">of Peru</span>.',h_lead:"Where Peru's first Internet booth was born in 1994, today rises Miraflores' biggest startup campus. From idea to scale, we connect founders with a high-impact ecosystem.",h_cta1:"Apply to a program",h_cta2:"Discover our history",
+  h_s1:"projected startups",h_s2:"acceleration programs",h_s3:"ecosystem partners",h_s4:"the year Peru got connected",
+  st_eyebrow:"Built at the Hub",st_title:"Startups born here.",st_cta:"View all",st_note:"Sample startups for the mockup. To be replaced with real residents.",
+  st_1:"Fintech",st_2:"Mobility",st_3:"Foodtech",st_4:"Tourism",st_5:"Cleantech",st_6:"Healthtech",st_7:"Edtech",st_8:"Proptech",st_9:"GovTech",st_10:"Blue economy",st_11:"Creative economy",st_12:"Data / AI",
+  pr_eyebrow:"Programs",pr_title:"A program for every stage.",pr_lead:"From first prototype to regional scale, the Hub offers support tracks alongside top-tier partners.",
+  pr_1_k:"Idea",pr_1_t:"Cabina",pr_1_d:"Pre-incubation for those just starting. Named after the 1994 booth, the first access point.",
+  pr_2_k:"Traction",pr_2_t:"Malecón",pr_2_d:"Acceleration for startups with product and first customers.",
+  pr_3_k:"Scale",pr_3_t:"Pacífico",pr_3_d:"Regional scaling for startups ready to cross borders.",
+  pr_4_k:"GovTech",pr_4_t:"Distrito",pr_4_d:"A program for solutions that improve the city's services.",
+  pr_5_k:"Impact",pr_5_t:"Vecino",pr_5_d:"Social and environmental entrepreneurship focused on the community.",
+  pr_6_k:"Women",pr_6_t:"Fundadoras",pr_6_d:"A program dedicated to women-led startups.",
+  cm_eyebrow:"The Campus",cm_title:"Not your average coworking.",
+  cm_1t:"Contacts that open doors",cm_1d:"One of Peru's most connected communities: funds, corporates, authorities and founders in one place.",
+  cm_2t:"Surrounded by the best",cm_2d:"Build your startup alongside dozens of frontier teams and experienced founders.",
+  cm_3t:"A space with history",cm_3d:"The Ricardo Palma Cultural Center, home of Peru's first Internet booth, now reborn as an innovation campus.",
+  cm_4t:"Services you won't find elsewhere",cm_4d:"Mentorship, access to investment, legal and admin support, and alliances with global brands.",
+  hi_eyebrow:"1994 · The origin",hi_title:"Where Peru connected to the world.",hi_p1:"In February 1994, the Peruvian Scientific Network connected Peru to the Internet for the first time, via satellite. That same year, at the Ricardo Palma Cultural Center in Miraflores, the country's first public Internet booth opened.",hi_p2:"It had 40 computers —20 PCs and 20 Macintosh— where any citizen could explore the web and learn to use it. The model was so pioneering it spread across Peru in the following years.",hi_p3:"<strong style=\"color:#fff;\">Thirty years later, the same building is a starting point again: from the booth that connected the country, to the campus that will make it build.</strong>",
+  pt_eyebrow:"Ecosystem",pt_title:"Partners present on campus.",pt_lead:"Types of partners the Hub seeks to bring together. Sample logos for the mockup.",
+  pt_1:"Municipality",pt_2:"Universities",pt_3:"VC funds",pt_4:"Banking",pt_5:"Corporates",pt_6:"Cooperation",pt_7:"Chambers",pt_8:"Accelerators",
+  no_eyebrow:"News",no_title:"What's happening at the Hub.",no_soon:"Coming soon",no_soon2:"Coming soon",no_soon3:"Coming soon",no_1:"Miraflores turns the Ricardo Palma into its innovation campus",no_2:"Applications open for the Cabina program for new startups",no_3:"30 years of Peru's first Internet booth",no_note:"Illustrative content for the mockup. To be replaced with real news.",
+  c_title:"Your startup starts in Miraflores.",c_p:"Apply to one of our programs or write to us to join the ecosystem.",c_btn:"Apply to the Hub →",
+  ft_tag:"The startup campus of Peru. Where the country connected, today it builds.",ft_h1:"Explore",ft_h2:"Hub",ft_h3:"Contact",ft_join:"Apply",ft_loc:"Miraflores, Lima, Peru",ft_copy:"© 2026 Hub Miraflores. Mockup / beta version.",ft_insp:"Inspired by world-class innovation campuses."
+ }
+};
+(function(){
+  var toggle=document.querySelector('.menu-toggle');
+  var list=document.getElementById('nav-list');
+  function applyLang(lang){
+    document.documentElement.setAttribute('lang',lang);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');var v=I18N[lang][k];if(v===undefined)return;if(/<[a-z][\s\S]*>/i.test(v))el.innerHTML=v;else if(el.tagName==='META')el.setAttribute('content',v);else el.textContent=v;});
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){var a=b.getAttribute('data-lang-btn')===lang;b.classList.toggle('active',a);b.setAttribute('aria-pressed',a?'true':'false');});
+    try{localStorage.setItem('hm_lang',lang);}catch(e){}
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang-btn'));});});
+  var initLang='es';try{var s=localStorage.getItem('hm_lang');if(s&&I18N[s])initLang=s;else if(navigator.language&&navigator.language.startsWith('en'))initLang='en';}catch(e){}applyLang(initLang);
+  if(toggle&&list){toggle.addEventListener('click',function(){var open=list.classList.toggle('is-open');toggle.setAttribute('aria-expanded',open?'true':'false');});list.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){list.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');});});}
+  var prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals=document.querySelectorAll('.reveal');
+  if(prefersReduced||!('IntersectionObserver'in window)){reveals.forEach(function(el){el.classList.add('is-visible');});}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(function(el){io.observe(el);});}
+})();
+</script>
+</body>
+</html>
